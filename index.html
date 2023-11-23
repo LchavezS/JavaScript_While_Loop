@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While_Loops_Sandbox</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+    var i = 0;
+    while (i <=15) {
+        console.log("Hello World");
+        i++;
+    }
+
+
+    //Another example
+
+var myArray  = [];
+var i = 0;
+
+console.log(myArray);
+
+while (i < 10) {
+    myArray.push(i);
+    i++;
+}
+console.log(myArray);
+
+//Third Example. 
+
+var numbers = [2, 3, 4, 5, 6, 7, 8, 9, 34];
+var i = 0;
+
+while (numbers.length > 4) {
+    numbers.pop(); //.pop delete items in the while loop fucntion. 
+}
+
+console.log(numbers);
+
+//While "For"
+
+var myArray2 = [];
+
+for (var i = 0; i < 10; i += 2) {
+
+    myArray2.push(i);
+}
+
+console.log(myArray2);
+
+//While "For" Odd numbers
+
+
+var myarray3 = [];
+
+for (var i = 1; i <= 19; i +=2) {
+
+    myarray3.push(i);
+}
+console.log(myarray3);
+
+//Assignments: Using the While "For" to find the pairs numbers from 0 to 26
+
+var arrayPairs = [];
+
+for (var i = 2; i < 26; i += 2) {
+    arrayPairs.push(i);
+}
+console.log(arrayPairs);
+
+
+//While "For" to count backwards. 
+
+for (var i = 15; i >= 10; i-=2) {
+    console.log(i);
+
+}
+
+//More examples
+var myArray4 = [];
+
+for (var i = 10; i > 0; i -= 2) {
+    myArray4.push(i);
+}
+console.log(myArray4);
+
+//More examples;
+
+//More examples
+var myArray4 = [];
+
+for (var i = 10; i > 0; i -= 2) {
+    myArray4.push(i);
+}
+console.log(myArray4);
+
+//Iteration for Arrays using loop "For"
+
+var myArray5 = [4, 6, 8, 2];
+ 
+var total = 0;
+
+for (var i = 0; i < myArray5.length; i++) {
+    console.log("Iteration " + i); //This console.log is used to visualize the arrays items
+    console.log(myArray5[i]); //This console.log is used to visualize the arrays items
+    total += myArray5[i]; //This console.log is used to visualize the arrays items
+}
+console.log("The tatal of this Array values is: " + total);
+
+//Another Example: converting all arrays characters in capital letters
+
+var programmingLanguages = ["JavaScript", "Phython", "Java", "C++" ];
+
+for (var i = 0; i < programmingLanguages.length; i++) {
+    //Visualizing the arrays' elements one by one.
+    console.log("iteration " + i);
+    console.log(programmingLanguages[i]);
+    console.log(programmingLanguages[i].toLocaleUpperCase())
+}
+
+//Workingn with a "For" loop inside a function. 
+
+function countPairsNumbers (arreglo){
+    var total = 0;
+
+    //This loop "for" cycle indicate that the array will be a pair number if the result is == 0 when is divided by 2 
+    for (i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] % 2 == 0) {
+        total++;
+    }
+
+    return total;
+
+    }
+}
+console.log(countPairsNumbers([2, 4, 4, 6]));
+
+//Nested "For" loops
+
+var myArreglo = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+for (i = 0; i < myArreglo.length; i++) {
+
+        //Showing the iteration 
+        console.log("New Iteration ");
+        console.log("Arreglo: ");
+
+    var nestedArray = myArreglo[i]; //This the array
+    console.log("Array: " + nestedArray);
+    for (var j = 0; j < nestedArray.length; j++) {
+        //Showing the cycle. 
+        console.log(">>> Nested Array: ");
+        console.log("Element: ");
+        console.log(nestedArray[j]); //This is the element
+
+    }
+
+
+    </script>
+    
+</body>
+</html>
